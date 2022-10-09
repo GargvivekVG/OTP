@@ -9,24 +9,29 @@
 </head>
 <body>
     <div class="container">
-        <h1>ENTER OTP</h1>
+        <div class="headingContainer">
+            <h1 class="heading"><div class="line"></div> ENTER OTP <div class="line"></div></h1>
+        </div>
         <div class="userInput">
-            <input type="text" id="ist" maxlength="1" onkeyup="clickEvent(this,'sec')">
-            <input type="text" id="ist" maxlength="1" onkeyup="clickEvent(this,'third')">
-            <input type="text" id="ist" maxlength="1" onkeyup="clickEvent(this,'fourth')">
-            <input type="text" id="ist" maxlength="1" onkeyup="clickEvent(this,'fifth')">
-            <input type="text" id="ist" maxlength="1"">
+            <input type="text" id="first" maxlength="1" onkeyup="clickEvent(this,'second')">
+            <div class="line"></div>
+            <input type="text" id="second" maxlength="1" onkeyup="clickEvent(this,'third')">
+            <div class="line"></div>
+            <input type="text" id="third" maxlength="1" onkeyup="clickEvent(this,'fourth')">
+            <div class="line"></div>
+            <input type="text" id="fourth" maxlength="1" onkeyup="clickEvent(this,'fifth')">
+            <div class="line"></div>
+            <input type="text" id="fifth" maxlength="1">
         </div>
         <button>CONFIRM</button>
-        <!-- <script>
-            function clickEvent(first,last)
-            {
+        <script>
+            function clickEvent(first,last){
                 if(first.value.length)
                 {
                     document.getElementById(last).focus();
                 }
             }
-        </script> -->
+        </script>
     </div>
 </body>
 </html>
